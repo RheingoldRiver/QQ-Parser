@@ -1,0 +1,25 @@
+* {
+	color:white;
+	background-color:#262626;
+}
+
+a {
+	color:#0A84FF;
+}
+
+a:visited {
+	color:#8E8CD8;
+}
+
+input, textarea {
+	background-color:black;
+}
+
+#parser-output {
+	width : 100%;
+	height : 500px;
+}
+
+#current-patch {
+	font-weight:bold;
+}
