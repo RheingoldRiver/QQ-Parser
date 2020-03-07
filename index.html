@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<meta charset="utf-8"/>
+        <script src="config.js"></script>
+    	<script src="jquery.js"></script>
+		<script src="moment.js"></script>
+		<script src="moment-timezone-with-data.js"></script>
+		<script src="qq.js"></script>
+		<style>
+			#parser-output {
+				width : 100%;
+				height : 500px;
+			}
+			
+			#current-patch {
+				font-weight:bold;
+			}
+		</style> 
+        <h1>Leaguepedia LPL Scoreboard Parser</h1>
+    </head>
+    <body>
+    	<p>Make sure <a href="https://lol.gamepedia.com/Category:Maintenance_Pages_for_LPL_Scoreboards">these pages on the wiki</a> are all filled in properly, otherwise some data may not be filled correctly. <b>Patch is the most important one!</b></p>
+    	
+        <p>This tool is not affiliated with LPL or Riot etc, it's an unofficial tool.</p>
+        
+    	<p>Patch that will be used: <span id="current-patch">[loading]</span></p>
+    	
+    	<p>If you have any issues, contact River (the author) in <a href="https://discord.gg/6SNQ4c6">Discord</a> or on <a href="https://twitter.com/rheingoldriver">Twitter</a>.</p>
+        <form id="input-form">
+        	<label for="source-match">ID number of the match you want parsed.</label>
+        	<input id="source-match" type="text">
+        	<br>
+        	<label for="source-tournament">Tournament (optional if the wiki knows it)</label> <input id="source-tournament" type="text">
+        	<br>
+        	<input id="submit-button" type="submit" value="Parse!">
+        </form>
+    </body>
+</html>
